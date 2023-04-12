@@ -29,6 +29,26 @@
         - Any data type other than primitives
         - class, interface, enum, annotation, record
         - Variables of an array type
+        - The size is fixed (4 bytes in a 32 bit env, 8 bytes in a 64 bit env)
+
+### Naming convention for variables (or identifiers in general)
+
+-   Identifier can be name of - variable, method/function, class, interface, enum, package, annotation, record
+-   For class, interface, enum, annotation, record
+    -   PascalCase
+    -   First letter of each word is in uppercase, and the rest of the letters in each word are in lowercase
+        -   ArrayIndexOutOfBoundsException
+        -   StringDemo
+-   For methods, variables
+    -   camelCase
+    -   first word is in lowercase and the rest of the words are in PascalCase
+    -   main()
+    -   toString()
+    -   calcualteNetSalaryForOnrollEmployee()
+-   For packages
+    -   lowercase words delimited with dot
+    -   com.targetindia.programs
+-   We do not recommend the use of underscore or block letters in variables (there are exceptions)
 
 ## Operators
 
@@ -60,3 +80,7 @@
     -   while
     -   do/while
     -   for
+
+![](./images/arrays.dio.png)
+
+![](./images/strings.dio.png)
