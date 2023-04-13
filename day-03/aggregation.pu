@@ -1,0 +1,12 @@
+@startuml
+
+class Person{
+    -name: String;
+    -age: int;
+}
+
+class Address{}
+
+Person o-- Address
+
+@enduml
