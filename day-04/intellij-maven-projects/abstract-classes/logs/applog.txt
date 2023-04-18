@@ -1,0 +1,20 @@
+[DEBUG] 2023-04-18 18:47:52,977 main            com.targetindia.programs.AbstractClassDemo [  14] This is a debug message
+[ INFO] 2023-04-18 18:47:52,992 main            com.targetindia.programs.AbstractClassDemo [  15] This is a info message
+[ WARN] 2023-04-18 18:47:52,993 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:47:52,994 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
+[DEBUG] 2023-04-18 18:48:13,963 main            com.targetindia.programs.AbstractClassDemo [  14] This is a debug message
+[ INFO] 2023-04-18 18:48:13,980 main            com.targetindia.programs.AbstractClassDemo [  15] This is a info message
+[ WARN] 2023-04-18 18:48:13,981 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:48:13,982 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
+[ WARN] 2023-04-18 18:48:38,696 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:48:38,699 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
+[TRACE] 2023-04-18 18:49:12,319 main            com.targetindia.programs.AbstractClassDemo [  13] This is a trace message
+[DEBUG] 2023-04-18 18:49:12,339 main            com.targetindia.programs.AbstractClassDemo [  14] This is a debug message
+[ INFO] 2023-04-18 18:49:12,340 main            com.targetindia.programs.AbstractClassDemo [  15] This is a info message
+[ WARN] 2023-04-18 18:49:12,352 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:49:12,353 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
+[TRACE] 2023-04-18 18:49:50,280 main            com.targetindia.programs.AbstractClassDemo [  13] This is a trace message
+[DEBUG] 2023-04-18 18:49:50,297 main            com.targetindia.programs.AbstractClassDemo [  14] This is a debug message
+[ INFO] 2023-04-18 18:49:50,311 main            com.targetindia.programs.AbstractClassDemo [  15] This is a info message
+[ WARN] 2023-04-18 18:49:50,312 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:49:50,313 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message

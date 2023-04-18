@@ -1,0 +1,10 @@
+@startuml
+
+
+Person <|-- Student
+Person <|-- Employee
+
+Employee <|-- Manager
+Employee <|-- Salesman
+
+@enduml
