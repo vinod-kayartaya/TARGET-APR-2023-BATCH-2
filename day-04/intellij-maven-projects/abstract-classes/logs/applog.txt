@@ -1,20 +1,54 @@
-[DEBUG] 2023-04-18 18:47:52,977 main            com.targetindia.programs.AbstractClassDemo [  14] This is a debug message
-[ INFO] 2023-04-18 18:47:52,992 main            com.targetindia.programs.AbstractClassDemo [  15] This is a info message
-[ WARN] 2023-04-18 18:47:52,993 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
-[ERROR] 2023-04-18 18:47:52,994 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
-[DEBUG] 2023-04-18 18:48:13,963 main            com.targetindia.programs.AbstractClassDemo [  14] This is a debug message
-[ INFO] 2023-04-18 18:48:13,980 main            com.targetindia.programs.AbstractClassDemo [  15] This is a info message
-[ WARN] 2023-04-18 18:48:13,981 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
-[ERROR] 2023-04-18 18:48:13,982 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
-[ WARN] 2023-04-18 18:48:38,696 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
-[ERROR] 2023-04-18 18:48:38,699 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
-[TRACE] 2023-04-18 18:49:12,319 main            com.targetindia.programs.AbstractClassDemo [  13] This is a trace message
-[DEBUG] 2023-04-18 18:49:12,339 main            com.targetindia.programs.AbstractClassDemo [  14] This is a debug message
-[ INFO] 2023-04-18 18:49:12,340 main            com.targetindia.programs.AbstractClassDemo [  15] This is a info message
-[ WARN] 2023-04-18 18:49:12,352 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
-[ERROR] 2023-04-18 18:49:12,353 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
-[TRACE] 2023-04-18 18:49:50,280 main            com.targetindia.programs.AbstractClassDemo [  13] This is a trace message
-[DEBUG] 2023-04-18 18:49:50,297 main            com.targetindia.programs.AbstractClassDemo [  14] This is a debug message
-[ INFO] 2023-04-18 18:49:50,311 main            com.targetindia.programs.AbstractClassDemo [  15] This is a info message
-[ WARN] 2023-04-18 18:49:50,312 main            com.targetindia.programs.AbstractClassDemo [  16] This is a warn message
-[ERROR] 2023-04-18 18:49:50,313 main            com.targetindia.programs.AbstractClassDemo [  17] This is a error message
+[DEBUG] 2023-04-18 18:47:52,977 main            com.targetindia.programs.LoggerDemo [  14] This is a debug message
+[ INFO] 2023-04-18 18:47:52,992 main            com.targetindia.programs.LoggerDemo [  15] This is a info message
+[ WARN] 2023-04-18 18:47:52,993 main            com.targetindia.programs.LoggerDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:47:52,994 main            com.targetindia.programs.LoggerDemo [  17] This is a error message
+[DEBUG] 2023-04-18 18:48:13,963 main            com.targetindia.programs.LoggerDemo [  14] This is a debug message
+[ INFO] 2023-04-18 18:48:13,980 main            com.targetindia.programs.LoggerDemo [  15] This is a info message
+[ WARN] 2023-04-18 18:48:13,981 main            com.targetindia.programs.LoggerDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:48:13,982 main            com.targetindia.programs.LoggerDemo [  17] This is a error message
+[ WARN] 2023-04-18 18:48:38,696 main            com.targetindia.programs.LoggerDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:48:38,699 main            com.targetindia.programs.LoggerDemo [  17] This is a error message
+[TRACE] 2023-04-18 18:49:12,319 main            com.targetindia.programs.LoggerDemo [  13] This is a trace message
+[DEBUG] 2023-04-18 18:49:12,339 main            com.targetindia.programs.LoggerDemo [  14] This is a debug message
+[ INFO] 2023-04-18 18:49:12,340 main            com.targetindia.programs.LoggerDemo [  15] This is a info message
+[ WARN] 2023-04-18 18:49:12,352 main            com.targetindia.programs.LoggerDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:49:12,353 main            com.targetindia.programs.LoggerDemo [  17] This is a error message
+[TRACE] 2023-04-18 18:49:50,280 main            com.targetindia.programs.LoggerDemo [  13] This is a trace message
+[DEBUG] 2023-04-18 18:49:50,297 main            com.targetindia.programs.LoggerDemo [  14] This is a debug message
+[ INFO] 2023-04-18 18:49:50,311 main            com.targetindia.programs.LoggerDemo [  15] This is a info message
+[ WARN] 2023-04-18 18:49:50,312 main            com.targetindia.programs.LoggerDemo [  16] This is a warn message
+[ERROR] 2023-04-18 18:49:50,313 main            com.targetindia.programs.LoggerDemo [  17] This is a error message
+[TRACE] 2023-04-18 19:38:44,652 main            com.targetindia.model.Animal [   9] Don't know how a generic animal talks!
+[TRACE] 2023-04-18 19:49:03,290 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 19:53:46,397 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 19:53:46,430 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 19:59:31,207 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 19:59:31,223 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 19:59:31,359 main            com.targetindia.programs.AbstractClassDemo [  30] inside the process(), animal reference refers to an object of com.targetindia.model.Dog
+[TRACE] 2023-04-18 19:59:31,372 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 19:59:31,373 main            com.targetindia.programs.AbstractClassDemo [  30] inside the process(), animal reference refers to an object of com.targetindia.model.Cat
+[TRACE] 2023-04-18 19:59:31,374 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 20:02:00,464 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 20:02:00,581 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 20:02:00,600 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Dog
+[TRACE] 2023-04-18 20:02:00,616 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 20:02:00,630 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Cat
+[TRACE] 2023-04-18 20:02:00,631 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 20:02:00,633 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Lion
+[TRACE] 2023-04-18 20:02:00,634 main            com.targetindia.model.Animal [  10] Don't know how a generic animal talks!
+[TRACE] 2023-04-18 20:12:25,919 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 20:12:25,951 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 20:12:25,968 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Dog
+[TRACE] 2023-04-18 20:12:25,969 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 20:12:25,970 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Cat
+[TRACE] 2023-04-18 20:12:25,971 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 20:12:25,984 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Lion
+[TRACE] 2023-04-18 20:12:25,985 main            com.targetindia.model.Lion [   9] Lion is roaring...
+[TRACE] 2023-04-18 20:19:48,522 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 20:19:48,541 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 20:19:48,555 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Dog
+[TRACE] 2023-04-18 20:19:48,556 main            com.targetindia.model.Dog [   9] Dog is barking...
+[TRACE] 2023-04-18 20:19:48,557 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Cat
+[TRACE] 2023-04-18 20:19:48,569 main            com.targetindia.model.Cat [   9] CAt is meowing...
+[TRACE] 2023-04-18 20:19:48,570 main            com.targetindia.programs.AbstractClassDemo [  34] inside the process(), animal reference refers to an object of com.targetindia.model.Lion
+[TRACE] 2023-04-18 20:19:48,571 main            com.targetindia.model.Lion [   9] Lion is roaring...
