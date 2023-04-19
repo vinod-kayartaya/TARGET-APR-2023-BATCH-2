@@ -1,0 +1,13 @@
+@startuml
+
+
+Throwable <|-- Error
+Throwable <|-- Exception
+
+Exception <|-- RuntimeException
+
+RuntimeException <|-- ArithmeticException
+RuntimeException <|-- NumberFormatException
+RuntimeException <|-- IndexOutOfBoundsException
+IndexOutOfBoundsException <|-- ArrayIndexOutOfBoundsException
+@enduml

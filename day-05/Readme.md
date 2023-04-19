@@ -68,3 +68,9 @@ s1.getArea(); // gets the area of the Rectangle
 
 -   In Java 8, the developers of Java decided to have additional methods in some interface (specifically, Java collections), but this forced them to implmement these methods in hundreds of classes in collection framework.
 -   As an alternative, they introduced a keyword called `default` that allows the interface method to have a body. This acts like a fallback method for those `old` implementations.
+
+# Exceptions in Java
+
+-   An `exception` is a erroneous scenario at the runtime
+-   Runtime errors that can be handled by the developer inside the code are classified as `Exception` and those which cannot be handled inside the code (such as out-of-memory issue), are grouped under `Error`.
+-   In Java, at the top of the hierarchy is a class called `Throwable`
