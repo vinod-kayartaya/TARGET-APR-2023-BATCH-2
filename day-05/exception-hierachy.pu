@@ -5,6 +5,10 @@ Throwable <|-- Error
 Throwable <|-- Exception
 
 Exception <|-- RuntimeException
+Exception <|-- IOExcption
+Exception <|-- SQLException
+
+IOExcption <|-- FileNotFoundException
 
 RuntimeException <|-- ArithmeticException
 RuntimeException <|-- NumberFormatException
