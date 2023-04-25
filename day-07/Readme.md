@@ -70,6 +70,10 @@ List <|.. LinkedList
 List <|.. Vector
 Vector <|-- Stack
 
+Set <|.. HashSet
+Set <|.. TreeSet
+Set <|.. LinkedHashSet
+
 @enduml
 ```
 
@@ -96,3 +100,34 @@ Vector <|-- Stack
      - additional overhead involved
    - use this class only if your data in the collection is shared to multiple threads
 1. Stack
+
+## Implementation of Set
+
+- A set has no additional methods (apart from the ones introduced after Java 8, stream related)
+- An object of a Set is a collection that does not allow duplicate values
+
+The most common implementations include:
+
+1. HashSet
+
+   - internally uses a class called HashMap, which is a key/value pair collection, which internally uses an array called buckets
+   - because it uses arrays, they are generally faster than other Set implementations
+   - To ensure that there are not duplicates in the set, it uses the element's equals() and hashCode() methods
+     - for example, if e1 and e2 are two elements, then
+       - e1.equals(e2) == false and
+       - e1.hashCode() != e2.hashCode()
+   - Does not guarantee the order of insertion to be same order of retrieval
+
+1. TreeSet
+
+   - internally uses a class called TreeMap, which is a key/value pair collection, which internally uses a Red-Black tree, a specialized form of BST (binary search tree)
+   - The order of insertion can be anything, but order of retrieval is in ascending order of elements
+   - Here two elements's natural order is determined using a function called `compareTo`, which is forced upon a class by an interface called `java.lang.Comparable`
+     - In other words, the element's type must implement the Comparable interface.
+   - It is important to notice that this class does not depend on the `equals` and `hashCode` methods of the elements added.
+
+1. LinkedHashSet
+
+   - internal implementation uses a class called LinkedHashMap, which internally uses the linked list for storing multiple values
+   - uses the `hashCode` and `equals` to ensure that there are no duplicates.
+   - the order of insertion and retrieval are same.
