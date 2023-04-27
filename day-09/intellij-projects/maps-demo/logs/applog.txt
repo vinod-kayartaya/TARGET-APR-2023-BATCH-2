@@ -1,0 +1,12 @@
+[TRACE] 2023-04-27 19:51:26,254 main            com.targetindia.programs.Main [   9] starting the app now
+[TRACE] 2023-04-27 19:52:23,459 main            com.targetindia.programs.Main [   9] starting the app now
+[ WARN] 2023-04-27 19:52:43,812 main            com.targetindia.programs.Main [  53] user entered wrong choice type in the menu()
+[ WARN] 2023-04-27 19:53:07,819 main            com.targetindia.programs.Main [  53] user entered wrong choice type in the menu()
+[TRACE] 2023-04-27 19:53:11,629 main            com.targetindia.programs.Main [  11] exiting the app now
+[TRACE] 2023-04-27 20:19:50,239 main            com.targetindia.programs.Main [  16] starting the app now
+[TRACE] 2023-04-27 20:20:58,455 main            com.targetindia.programs.Main [  16] starting the app now
+[TRACE] 2023-04-27 20:21:08,497 main            com.targetindia.programs.Main [  18] exiting the app now
+[TRACE] 2023-04-27 20:21:27,661 main            com.targetindia.programs.Main [  16] starting the app now
+[TRACE] 2023-04-27 20:21:55,192 main            com.targetindia.programs.Main [  16] starting the app now
+[TRACE] 2023-04-27 20:23:13,825 main            com.targetindia.programs.Main [  16] starting the app now
+[TRACE] 2023-04-27 20:26:36,728 main            com.targetindia.programs.Main [  16] starting the app now
