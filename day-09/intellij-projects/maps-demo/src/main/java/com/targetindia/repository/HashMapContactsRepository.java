@@ -1,12 +1,16 @@
 package com.targetindia.repository;
 
+import com.targetindia.exceptions.DuplicateEmailException;
+import com.targetindia.exceptions.DuplicatePhoneException;
 import com.targetindia.model.Person;
 import com.targetindia.utils.DateUtil;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.*;
 
-public class HashMapContactsRepository {
-    private Map<String, Person> contacts = new HashMap<>();
+@Slf4j
+public class HashMapContactsRepository implements ContactsRepository{
+    private final Map<String, Person> contacts = new HashMap<>();
 
     public HashMapContactsRepository() {
         Person p = new Person();
@@ -29,13 +33,60 @@ public class HashMapContactsRepository {
     }
 
     public List<Person> getAllContacts(){
-        List<Person> list = new ArrayList<Person>(contacts.values());
-        Collections.<Person>sort(list, (p1, p2)->p1.getFirstname().compareTo(p2.getFirstname()));
+        List<Person> list = new ArrayList<>(contacts.values());
+        Collections.sort(list, (p1, p2)->p1.getFirstname().compareTo(p2.getFirstname()));
         return list;
     }
 
-    public void addNewContact(Person person){
-        // TODO add this person to the "contacts" map, and ensure that the phone number is unique
-        // Hint: contacts.put(person.getEmail(), person);
+    @Override
+    public Person getContactByPhone(String phone) throws RepositoryException {
+        return null;
     }
+
+    @Override
+    public List<Person> getContactsByCity(String city) throws RepositoryException {
+        return null;
+    }
+
+    @Override
+    public List<Person> getContactsByAge(int age) throws RepositoryException {
+        return null;
+    }
+
+    public void addNewContact(Person person) throws RepositoryException, DuplicateEmailException, DuplicatePhoneException{
+        log.trace("trying to add a new contact as {}", person);
+        if(contacts.containsKey(person.getEmail())){
+            log.trace("email already present in the contact list");
+            throw new DuplicateEmailException();
+        }
+
+        for(Person p: contacts.values()){
+            if(p.getPhone().equals(person.getPhone())){
+                log.trace("phone number already present in the contact list");
+                throw new DuplicatePhoneException();
+            }
+        }
+
+        contacts.put(person.getEmail(), person);
+        log.trace("successfully added the contact details");
+    }
+
+    @Override
+    public Person getContactById(String email) throws RepositoryException {
+        if(contacts.containsKey(email)){
+            return contacts.get(email);
+        }
+        return null;
+    }
+
+    @Override
+    public void updateContact(Person person) throws RepositoryException {
+
+    }
+
+    @Override
+    public void deleteContact(String email) throws RepositoryException {
+
+    }
+
 }

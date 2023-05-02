@@ -11,3 +11,67 @@
 [TRACE] 2023-04-27 20:23:13,825 main            com.targetindia.programs.Main [  16] starting the app now
 [TRACE] 2023-04-27 20:26:36,728 main            com.targetindia.programs.Main [  16] starting the app now
 [TRACE] 2023-04-27 20:32:21,048 main            com.targetindia.programs.Main [  16] starting the app now
+[TRACE] 2023-05-02 17:40:33,666 main            com.targetindia.programs.Main [  16] starting the app now
+[TRACE] 2023-05-02 17:59:11,146 main            com.targetindia.programs.Main [  20] starting the app now
+[TRACE] 2023-05-02 17:59:56,596 main            com.targetindia.repository.HashMapContactsRepository [  42] trying to add a new contact as Person(firstname=Vinod, lastname=Kumar, email=vinod@vinod.co, phone=9731424784, city=null, birthDate=Sun Jan 20 00:00:00 IST 1974)
+[TRACE] 2023-05-02 17:59:56,596 main            com.targetindia.repository.HashMapContactsRepository [  44] email already present in the contact list
+[TRACE] 2023-05-02 18:00:39,166 main            com.targetindia.repository.HashMapContactsRepository [  42] trying to add a new contact as Person(firstname=Vinod, lastname=Kumar, email=vinod@xmpl.com, phone=9731424784, city=null, birthDate=Sun Jan 20 00:00:00 IST 1974)
+[TRACE] 2023-05-02 18:00:39,166 main            com.targetindia.repository.HashMapContactsRepository [  50] phone number already present in the contact list
+[TRACE] 2023-05-02 18:01:15,644 main            com.targetindia.repository.HashMapContactsRepository [  42] trying to add a new contact as Person(firstname=Satya, lastname=Narayana, email=satya@xmpl.com, phone=8383711834, city=null, birthDate=Fri Dec 22 00:00:00 IST 1972)
+[TRACE] 2023-05-02 18:01:15,645 main            com.targetindia.repository.HashMapContactsRepository [  56] successfully added the contact details
+[TRACE] 2023-05-02 18:07:43,607 main            com.targetindia.programs.Main [  20] starting the app now
+[TRACE] 2023-05-02 18:08:11,404 main            com.targetindia.programs.Main [  22] exiting the app now
+[TRACE] 2023-05-02 18:51:47,877 main            com.targetindia.programs.Main [  21] starting the app now
+[TRACE] 2023-05-02 18:52:10,611 main            com.targetindia.programs.Main [  23] exiting the app now
+[TRACE] 2023-05-02 19:26:09,588 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:26:14,705 main            com.targetindia.programs.Main [  31] exiting the app now
+[TRACE] 2023-05-02 19:33:52,983 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:33:57,667 main            com.targetindia.programs.Main [  31] exiting the app now
+[TRACE] 2023-05-02 19:34:23,869 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:35:17,113 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:42:27,656 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:42:37,977 main            com.targetindia.programs.Main [  31] exiting the app now
+[TRACE] 2023-05-02 19:42:52,537 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:43:05,794 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:43:12,348 main            com.targetindia.programs.Main [  31] exiting the app now
+[TRACE] 2023-05-02 19:43:46,917 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:43:53,523 main            com.targetindia.programs.Main [  31] exiting the app now
+[TRACE] 2023-05-02 19:44:01,445 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:44:17,105 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:44:25,245 main            com.targetindia.programs.Main [  31] exiting the app now
+[TRACE] 2023-05-02 19:49:24,729 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:49:29,066 main            com.targetindia.programs.Main [  31] exiting the app now
+[TRACE] 2023-05-02 19:49:40,219 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:49:54,697 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:50:05,339 main            com.targetindia.programs.Main [  31] exiting the app now
+[TRACE] 2023-05-02 19:50:56,311 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:52:29,525 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:53:42,289 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 19:54:50,512 main            com.targetindia.programs.Main [  29] starting the app now
+[TRACE] 2023-05-02 20:13:42,039 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:14:57,085 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:15:37,124 main            com.targetindia.repository.CsvContactsRepository [  55] trying to add a new contact as Person(firstname=Vinod, lastname=Kumar, email=vinod@vinod.co, phone=9731424784, city=null, birthDate=Sun Jan 20 00:00:00 IST 1974)
+[TRACE] 2023-05-02 20:15:37,124 main            com.targetindia.repository.CsvContactsRepository [  69] successfully added the contact details
+[TRACE] 2023-05-02 20:15:45,069 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-02 20:15:48,642 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:19:04,208 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:19:28,603 main            com.targetindia.repository.CsvContactsRepository [  72] trying to add a new contact as Person(firstname=Vinod, lastname=Kumar, email=vinod@vinod.co, phone=9731424784, city=null, birthDate=Sun Jan 20 00:00:00 IST 1974)
+[TRACE] 2023-05-02 20:19:28,605 main            com.targetindia.repository.CsvContactsRepository [  87] successfully added the contact details
+[TRACE] 2023-05-02 20:19:35,061 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-02 20:19:38,381 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:19:55,337 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-02 20:21:29,926 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:21:50,836 main            com.targetindia.repository.CsvContactsRepository [  73] trying to add a new contact as Person(firstname=Vinod, lastname=Kumar, email=vinod@vinod.co, phone=9731424784, city=null, birthDate=Sun Jan 20 00:00:00 IST 1974)
+[TRACE] 2023-05-02 20:21:50,838 main            com.targetindia.repository.CsvContactsRepository [  88] successfully added the contact details
+[TRACE] 2023-05-02 20:21:53,368 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-02 20:21:56,880 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:22:12,217 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-02 20:22:23,798 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:22:50,172 main            com.targetindia.repository.CsvContactsRepository [  73] trying to add a new contact as Person(firstname=Ananad, lastname=Rao, email=anand@xmpl.com, phone=9292928282, city=null, birthDate=Wed Feb 20 00:00:00 IST 1991)
+[TRACE] 2023-05-02 20:22:50,175 main            com.targetindia.repository.CsvContactsRepository [  88] successfully added the contact details
+[TRACE] 2023-05-02 20:23:22,639 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-02 20:23:27,653 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:24:22,003 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-02 20:24:49,631 main            com.targetindia.repository.CsvContactsRepository [  73] trying to add a new contact as Person(firstname=Shyam, lastname=Sundar, email=shyam@xmpl.com, phone=9191918989, city=null, birthDate=Tue Oct 02 00:00:00 IST 1973)
+[TRACE] 2023-05-02 20:24:49,634 main            com.targetindia.repository.CsvContactsRepository [  88] successfully added the contact details
+[TRACE] 2023-05-02 20:24:52,526 main            com.targetindia.programs.Main [  30] exiting the app now

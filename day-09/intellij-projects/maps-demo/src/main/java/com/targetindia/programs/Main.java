@@ -1,16 +1,28 @@
 package com.targetindia.programs;
 
-import com.targetindia.repository.HashMapContactsRepository;
+import com.targetindia.exceptions.DuplicateEmailException;
+import com.targetindia.exceptions.DuplicatePhoneException;
+import com.targetindia.repository.ContactsRepository;
 import com.targetindia.model.Person;
+import com.targetindia.repository.RepositoryException;
+import com.targetindia.repository.RepositoryFactory;
 import com.targetindia.utils.DateUtil;
 import com.targetindia.utils.KeyboardUtil;
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Date;
 import java.util.List;
 
 @Slf4j
 public class Main {
-    HashMapContactsRepository repo = new HashMapContactsRepository();
+    // since we are using the name of the class with "new" keyword, it's called
+    // tight-coupling. Meaning, in case if we need to change the implementation,
+    // we have to make changes to this file (and many other such files that might
+    // have referred the class)
+    // ContactsRepository repo = new HashMapContactsRepository();
+
+    // the following code is called "loose coupling"
+    ContactsRepository repo = RepositoryFactory.getContactsRepository();
 
     public static void main(String[] args) {
         log.trace("starting the app now");
@@ -26,6 +38,7 @@ public class Main {
                     printContactList();
                     break;
                 case 2:
+                    acceptAndSearchByEmail();
                     break;
                 case 3:
                     break;
@@ -44,34 +57,75 @@ public class Main {
         System.out.println("Thank you for using our app. Have a nice day!");
     }
 
+    private void acceptAndSearchByEmail() {
+        String email = KeyboardUtil.getString("Enter email to search: ");
+        Person person = null;
+        try {
+            person = repo.getContactById(email);
+            if(person==null){
+                System.out.printf("No data found for email '%s'%n", email);
+                return;
+            }
+
+            System.out.println("The search was successful. Here is the data:");
+            System.out.printf("Name          : %s %s%n", person.getFirstname(), person.getLastname());
+            System.out.printf("Email address : %s%n", person.getEmail());
+            System.out.printf("Phone number  : %s%n", person.getPhone());
+            System.out.printf("Date of birth : %s%n", DateUtil.toString(person.getBirthDate()));
+            line();
+        } catch (RepositoryException e) {
+            System.out.println("There was a problem : " + e.getMessage());
+        }
+    }
+
     private void acceptAndAddNewContact() {
-        // TODO accept values from the user for a new Person data and call the repository function to add the person
-        //  object to the underlying data structure
+        System.out.println("Enter new person details to be added: ");
+        String firstname = KeyboardUtil.getString("Firstname     : ");
+        String lastname = KeyboardUtil.getString( "Lastname      : ");
+        String email = KeyboardUtil.getString(    "Email address : ");
+        String phone = KeyboardUtil.getString(    "Phone number  : ");
+        Date birthDate = KeyboardUtil.getDate(    "Date of birth : ");
+        Person person = new Person();
+        person.setFirstname(firstname);
+        person.setLastname(lastname);
+        person.setEmail(email);
+        person.setPhone(phone);
+        person.setBirthDate(birthDate);
+
+        try {
+            repo.addNewContact(person);
+        } catch (DuplicateEmailException|DuplicatePhoneException e) {
+            System.out.println("There was a problem while trying to add this data: " + e.getMessage());
+        }
     }
 
     private void printContactList() {
-        List<Person> list = repo.getAllContacts();
+        try {
+            List<Person> list = repo.getAllContacts();
 
-        if (list.size() == 0) {
-            System.out.println("No contacts found in your address book. Please add a new one.");
-            return;
-        }
+            if (list.size() == 0) {
+                System.out.println("No contacts found in your address book. Please add a new one.");
+                return;
+            }
 
-        line("=");
-        System.out.printf("%-25s %-25s %-10s %-15s %-12s%n",
-                "Name", "Email", "Phone", "City", "D.O.B.");
-        line();
-
-        for (Person p : list) {
+            line("=");
             System.out.printf("%-25s %-25s %-10s %-15s %-12s%n",
-                    p.getFirstname() + " " + p.getLastname(),
-                    p.getEmail(),
-                    p.getPhone(),
-                    p.getCity(),
-                    DateUtil.toString(p.getBirthDate()));
-        }
+                    "Name", "Email", "Phone", "City", "D.O.B.");
+            line();
 
-        line("=");
+            for (Person p : list) {
+                System.out.printf("%-25s %-25s %-10s %-15s %-12s%n",
+                        p.getFirstname() + " " + p.getLastname(),
+                        p.getEmail(),
+                        p.getPhone(),
+                        p.getCity(),
+                        DateUtil.toString(p.getBirthDate()));
+            }
+
+            line("=");
+        } catch (RepositoryException e) {
+            System.out.println("There was an error: " + e.getMessage());
+        }
     }
 
     private void line() {
