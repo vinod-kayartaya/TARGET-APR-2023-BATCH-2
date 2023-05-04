@@ -15,7 +15,7 @@ public class DeserializeEmployees {
             for (; ; ) {
                 try {
                     Employee e = (Employee) in.readObject();
-                    e.print();;
+                    e.print();
                 } catch (EOFException e) {
                     break;
                 }
