@@ -29,6 +29,8 @@ public final class RepositoryFactory {
                 return new HashMapContactsRepository();
             case "csv":
                 return new CsvContactsRepository();
+            case "serializable":
+                return new SerializableContactsRepository();
             default:
                 throw new RepositoryException("Unknown type for ContactsRepository: " + discriminator);
         }

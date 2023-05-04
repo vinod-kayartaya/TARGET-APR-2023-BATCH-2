@@ -75,3 +75,25 @@
 [TRACE] 2023-05-02 20:24:49,631 main            com.targetindia.repository.CsvContactsRepository [  73] trying to add a new contact as Person(firstname=Shyam, lastname=Sundar, email=shyam@xmpl.com, phone=9191918989, city=null, birthDate=Tue Oct 02 00:00:00 IST 1973)
 [TRACE] 2023-05-02 20:24:49,634 main            com.targetindia.repository.CsvContactsRepository [  88] successfully added the contact details
 [TRACE] 2023-05-02 20:24:52,526 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-04 20:20:16,870 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-04 20:20:40,072 main            com.targetindia.repository.SerializableContactsRepository [  43] trying to add a new contact as Person(firstname=Vinod, lastname=Kumar, email=vinod@vinod.co, phone=9731424784, city=null, birthDate=Sun Jan 20 00:00:00 IST 1974)
+[TRACE] 2023-05-04 20:20:40,104 main            com.targetindia.repository.SerializableContactsRepository [  58] successfully added the contact details
+[TRACE] 2023-05-04 20:21:07,744 main            com.targetindia.repository.SerializableContactsRepository [  43] trying to add a new contact as Person(firstname=Kishan, lastname=Kumar, email=kishan@xmpl.com, phone=9998887771, city=null, birthDate=Sun Feb 01 00:00:00 IST 1987)
+[TRACE] 2023-05-04 20:21:07,746 main            com.targetindia.repository.SerializableContactsRepository [  58] successfully added the contact details
+[TRACE] 2023-05-04 20:21:15,973 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-04 20:21:40,690 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-04 20:22:17,488 main            com.targetindia.repository.SerializableContactsRepository [  43] trying to add a new contact as Person(firstname=Shyam, lastname=Sundar, email=shaym.sundar@xmpl.com, phone=8986765453, city=null, birthDate=Tue Oct 02 00:00:00 IST 1973)
+[TRACE] 2023-05-04 20:22:17,491 main            com.targetindia.repository.SerializableContactsRepository [  58] successfully added the contact details
+[TRACE] 2023-05-04 20:22:19,518 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-04 20:22:30,560 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-04 20:22:46,258 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-04 20:23:23,247 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-04 20:23:48,489 main            com.targetindia.repository.SerializableContactsRepository [  43] trying to add a new contact as Person(firstname=John, lastname=Doe, email=johndoe@xmpl.com, phone=557382234, city=null, birthDate=Tue Feb 10 00:00:00 IST 1987)
+[TRACE] 2023-05-04 20:23:48,493 main            com.targetindia.repository.SerializableContactsRepository [  58] successfully added the contact details
+[TRACE] 2023-05-04 20:23:54,231 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-04 20:24:27,470 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-04 20:25:02,908 main            com.targetindia.repository.SerializableContactsRepository [  43] trying to add a new contact as Person(firstname=Ramesh, lastname=Iyer, email=rameshiyer@xmpl.com, phone=8393883323, city=Chennai, birthDate=Thu May 04 00:00:00 IST 1995)
+[TRACE] 2023-05-04 20:25:02,920 main            com.targetindia.repository.SerializableContactsRepository [  58] successfully added the contact details
+[TRACE] 2023-05-04 20:25:08,987 main            com.targetindia.programs.Main [  30] exiting the app now
+[TRACE] 2023-05-04 20:25:12,761 main            com.targetindia.programs.Main [  28] starting the app now
+[TRACE] 2023-05-04 20:25:20,867 main            com.targetindia.programs.Main [  30] exiting the app now

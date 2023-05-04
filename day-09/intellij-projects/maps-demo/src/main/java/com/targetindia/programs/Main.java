@@ -62,7 +62,7 @@ public class Main {
         Person person = null;
         try {
             person = repo.getContactById(email);
-            if(person==null){
+            if (person == null) {
                 System.out.printf("No data found for email '%s'%n", email);
                 return;
             }
@@ -81,20 +81,22 @@ public class Main {
     private void acceptAndAddNewContact() {
         System.out.println("Enter new person details to be added: ");
         String firstname = KeyboardUtil.getString("Firstname     : ");
-        String lastname = KeyboardUtil.getString( "Lastname      : ");
-        String email = KeyboardUtil.getString(    "Email address : ");
-        String phone = KeyboardUtil.getString(    "Phone number  : ");
-        Date birthDate = KeyboardUtil.getDate(    "Date of birth : ");
+        String lastname = KeyboardUtil.getString("Lastname      : ");
+        String email = KeyboardUtil.getString("Email address : ");
+        String phone = KeyboardUtil.getString("Phone number  : ");
+        String city = KeyboardUtil.getString("City          : ");
+        Date birthDate = KeyboardUtil.getDate("Date of birth : ");
         Person person = new Person();
         person.setFirstname(firstname);
         person.setLastname(lastname);
         person.setEmail(email);
+        person.setCity(city);
         person.setPhone(phone);
         person.setBirthDate(birthDate);
 
         try {
             repo.addNewContact(person);
-        } catch (DuplicateEmailException|DuplicatePhoneException e) {
+        } catch (DuplicateEmailException | DuplicatePhoneException e) {
             System.out.println("There was a problem while trying to add this data: " + e.getMessage());
         }
     }
