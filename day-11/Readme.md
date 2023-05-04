@@ -36,3 +36,5 @@ InputStream <|-- FileInputStream
 FileInputStream <|-- SocketInputStream
 @enduml
 ```
+
+![](./product.dio.png)

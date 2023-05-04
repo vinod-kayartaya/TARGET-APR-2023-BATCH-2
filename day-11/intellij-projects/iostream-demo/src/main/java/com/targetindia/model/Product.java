@@ -19,4 +19,5 @@ public class Product implements Serializable {
     private String name;        // 8
     private String category;    // 8
     private double price;       // 8
+
 }
