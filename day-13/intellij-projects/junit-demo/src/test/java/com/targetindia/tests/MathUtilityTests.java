@@ -73,6 +73,13 @@ class MathUtilityTests {
             }
         }
 
+        @Test
+        void expectingAnExceptionHere(){
+            Assertions.assertThrows(NullPointerException.class, ()->{
+                mu.addAll("10", "vinod", "20", null, "30");
+            });
+        }
+
     }
 
 }
