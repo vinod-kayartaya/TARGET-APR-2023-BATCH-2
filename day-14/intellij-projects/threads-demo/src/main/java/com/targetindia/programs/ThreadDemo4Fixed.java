@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 
 @Slf4j
-public class ThreadDemo4 {
+public class ThreadDemo4Fixed {
     public static void main(String[] args) throws Exception {
         String[][] filenames = {
                 {"numbers1.csv", "numbers1_sum.csv"},
@@ -16,14 +16,10 @@ public class ThreadDemo4 {
         };
 
         for (String[] f : filenames) {
-            try (
-                    FileReader reader = new FileReader(f[0]);
-                    FileWriter writer = new FileWriter(f[1]);
-            ) {
-                CsvNumberAdder adder = new CsvNumberAdder(reader, writer);
-                // do not the call the adder.run() by yourself, instead use the threads
-                new Thread(adder).start();
-            } // reader.close() and writer.close() called here, because of which we run into a problem.
+            FileReader reader = new FileReader(f[0]);
+            FileWriter writer = new FileWriter(f[1]);
+            CsvNumberAdder adder = new CsvNumberAdder(reader, writer);
+            new Thread(adder).start();
         }
         log.trace("End of main reached.");
     }
