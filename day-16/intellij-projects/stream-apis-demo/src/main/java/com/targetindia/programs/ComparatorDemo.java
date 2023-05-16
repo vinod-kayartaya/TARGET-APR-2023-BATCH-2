@@ -44,7 +44,7 @@ public class ComparatorDemo {
         names.stream()
                 .min((name1, name2) -> name1.length() - name2.length())
                 .ifPresent(shortestName -> System.out.println("Shortest name is " + shortestName));
-        
+
         names.stream()
                 .max((name1, name2) -> name1.length() - name2.length())
                 .ifPresent(longestName -> System.out.println("Longest name is " + longestName));

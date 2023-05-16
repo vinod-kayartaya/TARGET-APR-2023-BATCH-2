@@ -53,3 +53,15 @@ Some of the most important `functional interfaces` we may have be aware of befor
   - takes two elements of the stream and returns negative, zero or positive for `t1<t2`, `t1==t2` and `t1>t2` respectively
   - brings order between two elements
   - min, max, sorted are functions of Stream that take Comparator
+- java.util.function.Function
+  - `R apply(T t)`
+  - Here `R` is the modified or derived version of `t`
+  - Example, suppose in a stream of strings, we want the string to be transformed into uppercase,
+    - `(str) -> str.toUpperCase()`
+  - Another example, suppose in a stream of integers, for every integer, we want double the value of an element:
+    - `n -> 2*n`
+  - One more example, suppose we have a stream of elements, where each element represents the radius of a circle, and we want the area of the circle,
+    - `r -> Math.PI * r * r`
+  - this functional interface is an argument for the following methods of Stream:
+    - `map`
+    - `flatMap`
