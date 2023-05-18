@@ -7,3 +7,6 @@ CREATE TABLE employees (
 );
 ```
 
+![](./statement.dio.png)
+
+![](./resultset.dio.png)
