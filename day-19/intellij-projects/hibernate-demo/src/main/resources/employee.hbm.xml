@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "com.targetindia.entity.Employee" table = "employees">
+        <id name = "id" column = "id" />
+        <property name = "name" column = "name" />
+        <property name = "department" column = "department"  />
+        <property name = "salary" column = "salary" />
+    </class>
+</hibernate-mapping>

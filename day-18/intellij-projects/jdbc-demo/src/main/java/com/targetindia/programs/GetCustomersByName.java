@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 @Slf4j
 public class GetCustomersByName {
     public static void main(String[] args) {
-        String cmd = "select * from customers where first_name like ?";
+        String cmd = "select * from customers where lower(first_name) like lower(?)";
         try (
                 Connection conn = DbUtil.createConnection();
                 PreparedStatement stmt = conn.prepareStatement(cmd);
