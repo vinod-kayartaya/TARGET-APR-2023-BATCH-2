@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+
+    <persistence-unit name="h2-testdb" transaction-type="RESOURCE_LOCAL">
+        <!-- discriminator for choosing the implementation for JPA interfaces -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+<!--        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>-->
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/testdb"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Welcome#123"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <!--
+            <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+            -->
+        </properties>
+    </persistence-unit>
+</persistence>
+
+        <!-- Filename/path src/main/resources/META-INF/persistence.xml -->

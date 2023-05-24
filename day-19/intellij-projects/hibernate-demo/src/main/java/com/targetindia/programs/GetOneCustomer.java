@@ -12,6 +12,7 @@ public class GetOneCustomer {
         try (
                 Session session = HibernateUtil.getSession();
         ) {
+            log.trace("session is an instanceof class {}", session.getClass().getName());
             Customer c1 = session.get(Customer.class, 7889);
             log.trace("c1 is {}", c1);
         }// session closed here
