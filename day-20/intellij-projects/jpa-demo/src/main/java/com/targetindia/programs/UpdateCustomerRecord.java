@@ -55,7 +55,17 @@ public class UpdateCustomerRecord {
             try {
                 tx.begin();
                 em.merge(c1); // c1 becomes a persistent object with a status of 'dirty'
+                // the merge method does the following:
+                // 1. takes the c1.id and executes a SELECT query to bring the data corresponding to c1.id
+                // 2. compares the data coming from the DB with the data maintained by c1
+                // 3a. if the data is same, then c1's state is NONE
+                // 3b. if the data is different, then c1's state is DIRTY
+
                 tx.commit();
+                // all persistent objects with state of DIRTY is converted into SQL UPDATE commands and are executed
+                // all persistent objects with state of NEW is converted into SQL INSERT commands and are executed
+                // all persistent objects with state of REMOVED is converted into SQL DELETE commands and are executed
+
                 System.out.println("Data updated successfully!");
             } catch (Exception e) {
                 tx.rollback();

@@ -15,7 +15,7 @@ public class CreateNewCustomerRecord {
         String phone = KeyboardUtil.getString("Phone number: ");
         String gender = KeyboardUtil.getString("Gender (Male/Female): ");
 
-        Customer c = new Customer();
+        Customer c = new Customer(); // at this time, for JPA/hibernate this object is called TRANSIENT
         c.setFirstname(firstname);
         c.setLastname(lastname);
         c.setEmail(email);
@@ -29,6 +29,7 @@ public class CreateNewCustomerRecord {
             try{
                 tx.begin();
 
+                // after calling em.persist, "c" becomes a PERSISTENT object (from TRANSIENT)
                 em.persist(c); // NO SQL INSERT command is executed here
 
                 tx.commit(); // all SQL INSERT/UPDATE/DELETE are executed here depending on entities currently
@@ -40,7 +41,6 @@ public class CreateNewCustomerRecord {
                 System.out.println("There was an error while committing the transaction");
                 e.printStackTrace();
             }
-
-        } // em is closed here
+        } // em is closed here. now "c" becomes a DETACHED object
     }
 }

@@ -10,6 +10,8 @@ public class GetCustomerById {
 
     public static void main(String[] args) {
 
+        log.trace("starting the main program...");
+
         try (
                 EntityManager em = JpaUtil.createEnitytManager();
         ) {
