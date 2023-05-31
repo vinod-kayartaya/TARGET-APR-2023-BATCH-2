@@ -250,3 +250,47 @@ Accept: application/json
     "country": "India"
 }
 ```
+
+When you make a PUT request, the entire existing resource will be replaced with the payload sent
+
+```http
+PUT /api/contacts/bc37e428-47f7-490a-a00c-b62b145effed
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "city": "Bangalore",
+    "state": "Karnataka"
+}
+```
+
+Generally DELETE is not implemented, since we lose the data for ever. However, for educational purposes, we have implemented that feature in the `contact-service`
+
+```http
+DELETE /api/contacts/bc37e428-47f7-490a-a00c-b62b145effed
+Host: localhost:8080
+Accept: application/json
+```
+
+Following are more queries on the contacts resource. If you want to get response in different formats, use the RFC2616 request format.
+
+```http
+http://localhost:8080/api/contacts?state=Texas
+```
+
+```http
+http://localhost:8080/api/contacts?city=Irving
+```
+
+```http
+http://localhost:8080/api/contacts?gender=Female
+```
+
+```http
+http://localhost:8080/api/contacts?email=zgoring1l@vimeo.com
+```
+
+```http
+http://localhost:8080/api/contacts?phone=4054589458
+```
