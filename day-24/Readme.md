@@ -86,3 +86,20 @@ try(
 }// ctx.close() called here
 
 ```
+
+![](./spring.dio.png)
+
+An example AppConfig class file
+
+```java
+public class AppConfig1 {
+    @Bean
+    public JdbcProductDao dao1(){
+        log.trace("AppConfig1.dao1() called");
+        JdbcProductDao dao = new JdbcProductDao();
+
+        log.trace("returning an object of JdbcProductDao to the spring container");
+        return dao;
+    }
+}
+```
