@@ -1,5 +1,7 @@
 package com.targetindia.programs;
 
+import com.targetindia.config.AppConfig1;
+import com.targetindia.config.AppConfig2;
 import com.targetindia.config.AppConfig3;
 import com.targetindia.dao.ProductDao;
 import lombok.extern.slf4j.Slf4j;

@@ -179,7 +179,7 @@ Add a new contact using JSON format
 POST /api/contacts
 Host: localhost:8080
 Content-Type: application/json
-Accept: application/json
+Accept: application/xml
 
 {
     "firstname": "Vinod",
