@@ -1,8 +1,8 @@
 package com.targetindia.dao;
 
 import com.targetindia.model.Product;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
 import org.springframework.jdbc.core.RowMapper;
@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Slf4j
 @Repository("dao")
 public class JdbcTemplateProductDao implements ProductDao {
 
@@ -79,7 +80,9 @@ public class JdbcTemplateProductDao implements ProductDao {
 
     @Override
     public Product getProductById(int productId) throws DaoException {
-        return template.queryForObject("select*from products where product_id=?", prm, productId);
+        Product p = template.queryForObject("select*from products where product_id=?", prm, productId);
+        log.trace("p = {}", p);
+        return p;
     }
 
     @Override
