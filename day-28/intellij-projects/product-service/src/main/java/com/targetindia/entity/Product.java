@@ -1,14 +1,20 @@
 package com.targetindia.entity;
 
 import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name = "products")
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Product {
     @Id
     @Column(name = "product_id")
+    @GeneratedValue(generator = "increment")
     private Integer productId;
     @Column(name = "product_name")
     private String productName;

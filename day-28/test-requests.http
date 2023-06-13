@@ -1,4 +1,81 @@
-GET /api/products/12
-Host: localhost:8080
+GET /api/products/1
+Host: localhost:1234
 Accept: application/json
 ###
+GET /api/products/1
+Host: localhost:1234
+Accept: text/plain
+###
+GET /api/products/1
+Host: localhost:1234
+Accept: application/xml
+###
+POST /api/products
+Host: localhost:1234
+Content-Type: application/json
+Accept: application/json
+
+{
+  "productId": 302,
+  "productName": "Masala chai",
+  "supplierId": 1,
+  "categoryId": 1,
+  "quantityPerUnit": "10 boxes x 20 bags",
+  "unitPrice": 22.45,
+  "unitsInStock": 15,
+  "unitsOnOrder": 5,
+  "reorderLevel": 2,
+  "discontinued": 0
+}
+###
+PUT /api/products/302
+Host: localhost:1234
+Content-Type: application/json
+Accept: application/json
+
+{
+    "productId": 400,
+  "productName": "Masala chai####",
+  "supplierId": 1,
+  "categoryId": 1,
+  "quantityPerUnit": "10 boxes x 20 bags",
+  "unitPrice": 22.45,
+  "unitsInStock": 90,
+  "unitsOnOrder": 45,
+  "reorderLevel": 5,
+  "discontinued": 0
+}
+###
+
+DELETE /api/products/308
+Host: localhost:1234
+Accept: application/json
+
+###
+PATCH /api/products/302
+Host: localhost:1234
+Content-Type: application/json
+Accept: application/json
+
+{
+  "discontinued": 1
+}
+
+###
+POST /api/products
+Host: localhost:1234
+Content-Type: application/xml
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<product>
+  <productName>Lemon Tea</productName>
+  <supplierId>1</supplierId>
+  <categoryId>1</categoryId>
+  <quantityPerUnit>10 boxes x 20 bags</quantityPerUnit>
+  <unitPrice>20.5</unitPrice>
+  <unitsInStock>10</unitsInStock>
+  <unitsOnOrder>0</unitsOnOrder>
+  <reorderLevel>2</reorderLevel>
+  <discontinued>0</discontinued>
+</product>
