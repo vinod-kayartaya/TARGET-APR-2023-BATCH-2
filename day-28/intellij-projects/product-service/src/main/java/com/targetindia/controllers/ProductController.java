@@ -5,6 +5,7 @@ import com.targetindia.entity.Product;
 import com.targetindia.model.Info;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,15 +28,23 @@ public class ProductController {
     // alternately @RequestMapping(method=RequestMethod.GET)
 
     @GetMapping(path = "/{productId}", produces = {"application/json", "application/xml"})
-    public Product handleGetOneAsJson(@PathVariable int productId) {
-        Product p = dao.findById(productId).get();
-        return p;
+    public ResponseEntity handleGetOneAsJsonAndXml(@PathVariable int productId) {
+        Optional<Product> result = dao.findById(productId);
+        if(result.isPresent()){
+            return ResponseEntity.ok(result.get());
+        }
+
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new Info("No product found!"));
     }
 
     @GetMapping(path = "/{productId}", produces = "text/plain")
-    public String handleGetOneAsText(@PathVariable int productId) {
-        Product p = dao.findById(productId).get();
-        return p.toString();
+    public ResponseEntity handleGetOneAsText(@PathVariable int productId) {
+        Optional<Product> result = dao.findById(productId);
+        if(result.isPresent()){
+            return ResponseEntity.ok(result.get().toString());
+        }
+
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No product found!");
     }
 
     @PostMapping(consumes = {"application/json", "application/xml"})

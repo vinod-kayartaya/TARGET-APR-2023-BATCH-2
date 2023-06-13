@@ -1,12 +1,12 @@
-GET /api/products/1
+GET /api/products/122
 Host: localhost:1234
 Accept: application/json
 ###
-GET /api/products/1
+GET /api/products/122
 Host: localhost:1234
 Accept: text/plain
 ###
-GET /api/products/1
+GET /api/products/122
 Host: localhost:1234
 Accept: application/xml
 ###
