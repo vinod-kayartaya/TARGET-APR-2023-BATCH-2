@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class ConnectToDbServer {
     public static void main(String[] args) {
-        String url = "jdbc:h2:tcp://localhost/~/testdb";
+        String url = "jdbc:mysql://localhost:1234/vinoddb";
 //        String url = "jdbc:mysql://localhost/testdb";
         String user = "root";
         String password = "Welcome#123";

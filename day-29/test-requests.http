@@ -1,17 +1,17 @@
-GET /api/products/122
-Host: localhost:1234
+GET /api/products/12
+Host: localhost:8080
 Accept: application/json
 ###
-GET /api/products/122
-Host: localhost:1234
+GET /api/products/1
+Host: localhost:8080
 Accept: text/plain
 ###
 GET /api/products/122
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/xml
 ###
 POST /api/products
-Host: localhost:1234
+Host: localhost:8080
 Content-Type: application/json
 Accept: application/json
 
@@ -29,7 +29,7 @@ Accept: application/json
 }
 ###
 PUT /api/products/302
-Host: localhost:1234
+Host: localhost:8080
 Content-Type: application/json
 Accept: application/json
 
@@ -48,12 +48,12 @@ Accept: application/json
 ###
 
 DELETE /api/products/308
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 
 ###
 PATCH /api/products/302
-Host: localhost:1234
+Host: localhost:8080
 Content-Type: application/json
 Accept: application/json
 
@@ -63,7 +63,7 @@ Accept: application/json
 
 ###
 POST /api/products
-Host: localhost:1234
+Host: localhost:8080
 Content-Type: application/xml
 Accept: application/xml
 
@@ -82,50 +82,50 @@ Accept: application/xml
 
 ###  Get all products
 GET /api/products HTTP/1.1
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 
 ###
 GET /api/products HTTP/1.1
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/xml
 
 ###  Get products by page number
 GET /api/products?_page=2 HTTP/1.1
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 
 ###
 GET /api/products?_page=2&_limit=15 HTTP/1.1
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 
 ###
 
 GET /api/products/by/price?min=50&max=100
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 
 ###
 
 GET /api/products/by?category=1
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 ###
 
 GET /api/products/by?supplier=12
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 
 ###
 
 GET /api/products/by?supplier=26&category=5
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 
 ###
 
 GET /api/products/by
-Host: localhost:1234
+Host: localhost:8080
 Accept: application/json
 
