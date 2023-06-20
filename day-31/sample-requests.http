@@ -1,0 +1,55 @@
+GET /api/customers/ANTON
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /api/customers/VINOD
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /actuator
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /actuator/health
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /actuator/beans
+Host: localhost:8080
+Accept: application/json
+
+###
+POST /actuator/shutdown
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /actuator/logfile
+Host: localhost:8080
+Accept: text/plain
+
+###
+
+GET /api/products/23
+Host: localhost:8080
+Accept: application/json
+###
+
+GET /api/categories/5
+Host: localhost:9090
+Accept: application/xml
+
+###
+
+GET /api/products/22
+Host: localhost:8080
+Accept: application/xml
+###
+
+GET /api/suppliers/9
+Host: localhost:7070
+Accept: application/json
