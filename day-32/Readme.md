@@ -28,3 +28,16 @@ Both these sockets provide InputStream and OutputStream, using which we can read
 - The client should read this and display the same
 - The Server should handle each client requests separately using threads
 - The client will display the menu in a loop until the user decides to quit
+
+# Java NIO (New I/O)
+
+- Introduced first in JDK 1.4 to provide more scalable and efficient I/O mechanisms compared to that of traditional I/O (java.io.\*)
+- offers better performance (through buffers and channels)
+  - buffer is a container of data during the I/O operations
+  - channels represent a connection to I/O destinations such as files or network sockets
+    - used to read from sources into buffers or write data from buffers to destinations
+        - FileChannel
+        - SocketChannel
+- deals with large volumes of data
+- provides APIs for non-blocking I/O
+
