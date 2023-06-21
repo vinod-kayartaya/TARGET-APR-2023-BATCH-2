@@ -28,7 +28,3 @@ Both these sockets provide InputStream and OutputStream, using which we can read
 - The client should read this and display the same
 - The Server should handle each client requests separately using threads
 - The client will display the menu in a loop until the user decides to quit
-
-Zoom meeting info:
-
-https://us06web.zoom.us/j/88693945905?pwd=Rmd3WjI1SUJudnhFTkdBdzdWeTlLdz09
