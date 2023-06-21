@@ -20,18 +20,18 @@ public class GreetingsServer {
 
     @SneakyThrows
     public static void main(String[] args) {
-        log.trace("Starting the server...");
+        System.out.println("Starting the server...");
         try (
                 ServerSocket serverSocket = new ServerSocket(8080)
         ) {
-            log.trace("Server started and listening on port 8080");
+            System.out.println("Server started and listening on port 8080");
             while (true) {
-                log.trace("Waiting for a client connection...");
+                System.out.println("Waiting for a client connection...");
                 Socket clientSocket = serverSocket.accept();
-                log.trace("Got a client connection from {}", clientSocket.getInetAddress());
-                log.trace("Picking a greeting message randomly to be sent to the client...");
+                System.out.printf("Got a client connection from %s%n", clientSocket.getInetAddress());
+                System.out.println("Picking a greeting message randomly to be sent to the client...");
                 String message = greetingMessages[new Random().nextInt(20)];
-                log.trace("Sending message '{}' to the client", message);
+                System.out.printf("Sending message '%s' to the client%n", message);
 
                 try(OutputStream outputStream = clientSocket.getOutputStream();
                     PrintWriter out = new PrintWriter(outputStream)){
