@@ -1,12 +1,10 @@
 package com.targetindia.programs;
 
 import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
 
 import java.io.InputStream;
 import java.net.Socket;
 
-@Slf4j
 public class GreetingsClient {
 
     @SneakyThrows

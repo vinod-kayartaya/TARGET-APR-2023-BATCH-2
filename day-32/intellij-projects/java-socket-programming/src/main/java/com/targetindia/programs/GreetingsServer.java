@@ -1,16 +1,13 @@
 package com.targetindia.programs;
 
 import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
 
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Random;
 
-@Slf4j
 public class GreetingsServer {
     static String[] greetingMessages = {"Hi!", "Hey, Heya or Hey there!", "Morning!", "How are things?",
             "What’s new?", "It’s good to see you", "G’day!", "Howdy!", "What’s up?", "How’s it going?",
